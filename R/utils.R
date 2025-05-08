@@ -123,7 +123,7 @@ set_cond_number <- function(sample, k) {
 ug_to_dag <- function(ug) {
 
   # We triangulate the undirected graph if it is not chordal
-  ug_cover <- gRbase::triangulate(igraph::as_graphnel(ug))
+  ug_cover <- gRbase::triangulate(ug)
 
   # We get the max_cardinality sort == perfect ordering
   # The perfect ordering will be the ancestral ordering of orientation
